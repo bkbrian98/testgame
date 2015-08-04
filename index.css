@@ -1,0 +1,433 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=PT + Mono);
+body {
+			margin: auto;
+			overflow: hidden;
+			background-color: #ccc;
+			-webkit-animation: color 50s linear 0s infinite;
+			-moz-animation: color 50s linear 0s infinite;
+			-ms-animation: color 50s linear 0s infinite;
+			cursor: default;
+}
+
+@-webkit-keyframes color {
+			0% {
+						background-color: #d55;
+			}
+			14% {
+						background-color: #d85;
+			}
+			28% {
+						background-color: #fd5;
+			}
+			42% {
+						background-color: #5d5;
+			}
+			56% {
+						background-color: #5d5;
+			}
+			70% {
+						background-color: #5dd;
+			}
+			84% {
+						background-color: #55d;
+			}
+			96% {
+						background-color: #d5d;
+			}
+			100% {
+						background-color: #d55;
+			}
+}
+
+@-moz-keyframes color {
+			0% {
+						background-color: #d55;
+			}
+			14% {
+						background-color: #d85;
+			}
+			28% {
+						background-color: #fd5;
+			}
+			42% {
+						background-color: #5d5;
+			}
+			56% {
+						background-color: #5d5;
+			}
+			70% {
+						background-color: #5dd;
+			}
+			84% {
+						background-color: #55d;
+			}
+			96% {
+						background-color: #d5d;
+			}
+			100% {
+						background-color: #d55;
+			}
+}
+
+@-ms-keyframes color {
+			0% {
+						background-color: #d55;
+			}
+			14% {
+						background-color: #d85;
+			}
+			28% {
+						background-color: #fd5;
+			}
+			42% {
+						background-color: #5d5;
+			}
+			56% {
+						background-color: #5d5;
+			}
+			70% {
+						background-color: #5dd;
+			}
+			84% {
+						background-color: #55d;
+			}
+			96% {
+						background-color: #d5d;
+			}
+			100% {
+						background-color: #d55;
+			}
+}
+
+.none {
+			display: none;
+}
+
+.paused {
+			-webkit-animation: none;
+			-moz-animation: none;
+			-moz-animation: none;
+}
+
+.paused .block {
+			display: block;
+}
+
+.paused #menu {
+			display: none;
+}
+
+#menu {
+			position: absolute;
+			height: 94%;
+			width: 94%;
+			margin: 3vh 3vw;
+			background-color: rgba(10, 0, 0, .4)
+}
+
+#titleP {
+			text-align: center;
+			color: #fff;
+			font-family: "Raleway";
+			font-size: 26px;
+}
+
+#subP {
+			margin-top: -20px;
+			text-align: center;
+			color: #fff;
+			font-family: "Raleway";
+			font-size: 14px;
+			font-weight: bold;
+}
+
+#content {
+			width: 100%;
+			height: 80%;
+}
+
+.cHalf {
+			display: inline-block;
+			height: 100%;
+			width: 48%;
+			vertical-align: top;
+			background-color: rgba(0, 0, 0, .1);
+}
+
+.cHalf:first-child {
+			margin-left: 1.58vw;
+}
+
+.cHalf:last-child {
+			height: 70%;
+}
+
+.cHTitle {
+			text-align: center;
+			color: white;
+			font-family: "Raleway";
+			font-size: 24;
+}
+
+.mapChoice {
+			display: block;
+			height: 22%;
+			width: 84%;
+			margin: 8px 8%;
+			border-radius: 2px;
+}
+
+.map1 {
+			background: url(http://i.imgur.com/EiQX45z.png);
+			background-position: left bottom;
+			background-size: cover;
+}
+
+.map2 {
+			background: url(http://i.imgur.com/0Va82KK.png);
+			background-position: left bottom;
+			background-size: cover;
+}
+
+.map3 {
+			background: url(http://i.imgur.com/0cwWHlB.png);
+			background-size: cover;
+}
+
+.mapChoice::after {
+			content: "";
+			position: relative;
+			display: block;
+			height: 100%;
+			width: 100%;
+			background-color: black;
+			color: white;
+			line-height: 18vh;
+			text-align: center;
+			font-family: "Raleway";
+			font-size: 22px;
+			border-radius: 2px;
+			opacity: 0;
+			z-index: -1;
+}
+
+.mapChoice:hover::after {
+			opacity: .8;
+			z-index: 1;
+			cursor: pointer;
+}
+
+.map1:hover::after {
+			content: "Beginner's Path (easy)";
+}
+
+.map2:hover::after {
+			content: "Parkour to the Top (medium)";
+}
+
+.map3:hover::after {
+			content: "Obstacle Course (hard)";
+}
+
+.br {
+			height: 1vh;
+}
+
+#note {
+			position: absolute;
+			height: 28%;
+			width: 48%;
+			margin: -28vh 50%;
+			background-color: rgba(0, 0, 0, .1);
+			font-family: "Raleway";
+			color: white;
+}
+
+#note .cHTitle {
+			position: absolute;
+			width: 100%;
+			top: -12px;
+			font-size: 26;
+}
+
+.charChoice {
+			display: inline-block;
+			height: 40%;
+			width: 32%;
+			margin-top: 5vh;
+			background-size: cover;
+}
+
+.charChoice::after {
+			display: none;
+			content: "";
+			position: absolute;
+			margin-top: 22vh;
+			height: 5%;
+			width: 15.3%;
+			background-color: rgba(0, 0, 0, .1);
+			text-align: center;
+			line-height: 35px;
+			font-family: "Raleway";
+			font-size: 18px;
+			color: white;
+			z-index: 2;
+}
+
+.charChoice:hover {
+			cursor: pointer;
+}
+
+.charChoice:hover::after {
+			display: block;
+}
+
+.char1 {
+			margin-left: .5vw;
+			background-image: url(http://i.imgur.com/GHbAR6i.png);
+}
+
+.char2 {
+			background-image: url(http://i.imgur.com/d0j6m42.png);
+}
+
+.char3 {
+			background-image: url(http://i.imgur.com/a74oPcq.png);
+}
+
+.char1::after {
+			content: "Original";
+}
+
+.char2::after {
+			content: "Smiley";
+			width: 15.35%;
+}
+
+.char3::after {
+			content: "Pinktopus";
+			width: 15.35%;
+}
+
+.selected::after {
+			display: block;
+}
+
+ol {
+			display: block;
+			font-size: 14px;
+			top: 10px;
+			list-style-type: none;
+}
+
+li pre {
+			display: inline;
+}
+
+.arrow {
+			display: inline-block;
+			height: 2px;
+			width: 10px;
+			background-color: white;
+			top: -3px;
+}
+
+.arrow::before {
+			content: "";
+			position: absolute;
+			height: 5px;
+			width: 2px;
+			background-color: white;
+			z-index: 10;
+			-webkit-transform: rotate(150deg);
+			-moz-transform: rotate(150deg);
+			-ms-transform: rotate(150deg);
+}
+
+.arrow::after {
+			content: "";
+			position: absolute;
+			height: 5px;
+			width: 2px;
+			margin-top: -3px;
+			background-color: white;
+			z-index: 10;
+			-webkit-transform: rotate(40deg);
+			-moz-transform: rotate(40deg);
+			-ms-transform: rotate(40deg);
+}
+
+.arrow2 {
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+}
+
+.arrowUp {
+			height: 10px;
+			width: 2px;
+			3
+}
+
+.arrowUp::before {
+			margin-left: -2px;
+			-webkit-transform: rotate(230deg);
+			-moz-transform: rotate(230deg);
+			-ms-transform: rotate(230deg);
+}
+
+.arrowUp::after {
+			margin: 0 2px;
+			-webkit-transform: rotate(140deg);
+			-moz-transform: rotate(140deg);
+			-ms-transform: rotate(140deg);
+}
+
+svg {
+			display: none;
+			position: absolute;
+			background-image: url(http://i.imgur.com/jnET37t.png);
+			background-size: cover;
+			z-index: 50;
+}
+
+#endScreen {
+			display: none;
+			position: absolute;
+			height: 100vh;
+			width: 100vw;
+			background-image: linear-gradient(45deg, rgba(120, 120, 120, 1) 40%, rgba(150, 150, 150, 1) 80%);
+			text-align: center;
+			color: #333;
+			font-family: "PT Mono";
+			font-size: 36px;
+}
+
+.endMsg:first-child {
+			margin-top: 150px;
+}
+
+.endMsg:last-child {
+			color: #333;
+			font-family: "PT Mono";
+			font-size: 24px;
+			font-weight: bold;
+}
+
+.endMsg strong {
+			color: black;
+}
+#reload{
+	height:7vh;
+	width:10vw;
+	margin-top:180px;
+	margin-left:45vw;
+	background-color:#88220a;
+	line-height:7vh;
+	text-align:center;
+	font-size:18px;
+	border-radius:2px;
+	color:white;
+	cursor:pointer;
+}

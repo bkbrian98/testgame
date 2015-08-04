@@ -1,0 +1,86 @@
+<body>
+			<style>
+						.spike{fill:url(#spike);}.OctoBug{fill:url(#ob);}.fin{fill:url(#fin)}.s{stroke:none;fill:#850;}.g{stroke:none;}		.cube{fill:rgba(250,50,0,.7);    stroke:rgba(250,50,0,.9);}.pinktopus{fill:url(#pinktopus);stroke:none;}.smiley{fill:url(#smiley);stroke:none;}
+			</style>
+			<div id="endScreen">
+						<p class="endMsg"></p>
+						<p class="endMsg"></p>
+				<div id="reload">play again</div>
+			</div>
+			<div id="menu">
+						<p id="titleP">Just Another Platformer</p>
+						<p id="subP">(Not supported on mobile or Internet Explorer)</p>
+						<div id="content">
+									<div class="cHalf">
+												<p class="cHTitle">Choose a Map</p>
+												<div class="br"></div>
+												<div class="mapChoice map1"></div>
+												<div class="br"></div>
+												<div class="mapChoice map2"></div>
+												<div class="br"></div>
+												<div class="mapChoice map3"></div>
+									</div>
+									<div class="cHalf">
+												<p class="cHTitle">Choose a Character</p>
+												<div class="charChoice char1"></div>
+												<div class="charChoice char2"></div>
+												<div class="charChoice char3"></div>
+									</div>
+									<div id="note">
+												<p class="cHTitle">How to Play</p>
+												<br/>
+												<ol>
+															<li>Play in full page</li>
+															<div class="br"></div>
+															<li>Use the<pre> </pre>
+																		<div class="arrow arrow1"></div><pre> </pre>and<pre> </pre>
+																		<div class="arrow arrow2"></div><pre> </pre>keys to move from side to side</li>
+															<div class="br"></div>
+															<li>Use the<pre> </pre>
+																		<div class="arrow arrowUp"></div><pre> </pre>key to jump</li>
+															<div class="br"></div>
+															<li>Dodge enemies</li>
+															<div class="br"></div>
+															<li>Reach the golden star to win</li>
+												</ol>
+									</div>
+						</div>
+			</div>
+			<svg id="svg" class="block" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+						<defs>
+									<pattern id="spike" x="0" y="0" height="1" width="1" patternContentUnits="userSpaceOnUse">
+												<rect x="0" y="0" height="50" width="50" fill="rgba(50,50,50,.1)" />
+												<polygon points="0,50 25,0 50,50" fill="#777" />
+												<polygon points="25,0 50,50 40,50" fill="#444" />
+									</pattern>
+									<pattern id="ob" x="0" y="0" height="1" width="1" patternContentUnits="userSpaceOnUse">
+												<rect x="0" y="0" height="50" width="50" fill="rgba(200,50,200,1)" />
+												<ellipse cx="10" cy="9" rx="5" ry="3" fill="white" />
+												<ellipse cx="30" cy="9" rx="5" ry="3" fill="white" />
+												<rect x="8" y="8" width="5" height="3" rx="1" ry="1" />
+												<rect x="27" y="8" width="5" height="3" rx="1" ry="1" />
+												<path d="M 0 28 l 0 12 l 5 0 l 0 -12 l 0 12 l 5 0 l 0 -12 l 0 12 l 5 0 l 0 -12 l 0 12 l 5 0 l 0 -12 l 0 12 l 5 0 l 0 -12 l 0 12 l 5 0 l 0 -12 l 0 12 l 5 0 l 0 -12 l 0 12 l 5 0 l 0 -12 l 0 12" fill="none" stroke="#000" />
+												<rect x="35" y="0" height="50" width="5" fill="rgba(0,0,0,.3)" />
+									</pattern>
+									<pattern id="fin" x="0" y="0" height="1" width="1" patternContentUnits="userSpaceOnUse">
+												<rect x="0" y="0" height="50" width="50" fill="#08e" />
+												<polygon points="25,10 35,35 10,20 40,20 15,35" fill="#eb0" />
+									</pattern>
+									<pattern id="smiley" x="0" y="0" height="1" width="1" patternContentUnits="userSpaceOnUse">
+												<rect x="0" y="0" height="30" width="30" fill="#ff0" />
+												<ellipse cx="10" cy="8" rx="2" ry="3" fill="#000" />
+												<ellipse cx="20" cy="8" rx="2" ry="3" fill="#000" />
+												<path d="M 5 18 l 2 -2 l -1 1 Q 15 26 24 17 l -1 -1 l 2 2" fill="none" stroke="#000" />
+									</pattern>
+									<pattern id="pinktopus" x="0" y="0" height="1" width="1" patternContentUnits="userSpaceOnUse">
+												<rect x="0" y="0" height="30" width="30" fill="#f77" />
+												<ellipse cx="7" cy="6" rx="4" ry="2" fill="white" />
+												<ellipse cx="23" cy="6" rx="4" ry="2" fill="white" />
+												<rect x="5" y="5" width="4" height="2" rx="1" ry="1" />
+												<rect x="21" y="5" width="4" height="2" rx="1" ry="1" />
+												<path d="M 0 22 l 0 8 l 5 0 l 0 -8 l 0 8 l 4 0 l 0 -8 l 0 8 l 4 0 l 0 -8 l 0 8 l 4 0 l 0 -8 l 0 8 l 4 0 l 0 -8 l 0 8 l 4 0 l 0 -8 l 0 8 l 5 0 l 0 -8 l 0 8" fill="none" stroke="#000" />
+												<rect x="27" y="0" height="30" width="3" fill="rgba(0,0,0,.3)" />
+									</pattern>
+						</defs>
+			</svg>
+</body>
